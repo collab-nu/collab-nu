@@ -4,8 +4,9 @@ body{
 
 .section-title{
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   color: #484848;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav_home{
@@ -19,17 +20,17 @@ body{
 
 .sign-in{
   position: relative;
-  left: 70%;
+  padding-left: 65%;
   padding-top: 10px;
 }
 
 .grid-container{
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .item-wrapper{
- text-align: center;
+ text-align: left;
  padding: 20px;
 }
 
@@ -37,11 +38,26 @@ body{
   display:inline-grid;
   width: 300px;
   height: 220px;
-
+  border-radius: 5px;
 }
 
 .item-text{
-  text-align: center;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin:0px;
+  font-size: 16px;
+}
+
+.item-text.item-tag{
+  color: rgb(118, 118, 118);
+}
+
+.item-text.item-title{
+  font-weight: bold;
+}
+
+.item-text.item-host{
+
 }
 
 .home-footer{
