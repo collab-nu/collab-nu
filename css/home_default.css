@@ -1,0 +1,49 @@
+body{
+
+}
+
+.section-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #484848;
+}
+
+.nav_home{
+  justify-content: normal;
+}
+
+.search-bar{
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.sign-in{
+  position: relative;
+  left: 70%;
+  padding-top: 10px;
+}
+
+.grid-container{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.item-wrapper{
+ text-align: center;
+ padding: 20px;
+}
+
+.item-image{
+  display:inline-grid;
+  width: 300px;
+  height: 220px;
+
+}
+
+.item-text{
+  text-align: center;
+}
+
+.home-footer{
+  height:70px;
+}
