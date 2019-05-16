@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+.project-card {
+  padding-top:30px;
+}
+
+.project-text-title {
+  margin-bottom: 40px;
+  padding-left: 4%;
+}
+
+.required {
+  color: red;
+}
+
+#name-field {
+  position: relative;
+  width: 85%;
+  height: 50px;
+  font-size: 120%;
+  padding-left: 0.5em;
+  padding-top: 0.2em;
+  background-color: #F8F8F8;
+  resize: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.project-text-reg {
+  margin-bottom: 15px;
+}
+
+.genfield {
+  position: relative;
+  width: 80%;
+  font-size: 120%;
+  padding-left: 0.5em;
+  padding-top: 0.2em;
+  background-color: #F8F8F8;
+  resize: none;
+  border-radius: 5px;
+  border-color: gray;
+}
+
+#desc-field {
+  height: 16%;
+}
+
+#contact-field {
+  height: 14%;
+}
+
+#time-field {
+  height: 10%;
+}
+
+.reqskillsbar {
+  position: relative;
+}
+
+.project-info{
+  display: inline-block;
+  width: 60%;
+  padding-left: 4%;
+}
+
+.imageUp {
+  vertical-align: top;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: Purple;
+  background-color: F8F8F8;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 340px;
+  width: 340px;
+  line-height: 340px;
+  text-align: center;
+  margin: 0px;
+}
+
+.imageUp:active{
+  color: indigo;
+  background-color: Gainsboro;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.reqskillsbar {
+  padding-left: 4%;
+}
+
+.skillbarheader {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.addPos {
+  background-color: Purple;
+  border: 1px solid indigo;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 3px;
+}
+
+#addPosition:active {
+  color: Gainsboro;
+  background-color: indigo;
+}
+
+.posForm{
+  border: 1px solid grey;
+  background-color: Gainsboro;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 45%;
+  padding: 4px;
+}
+
+#submitButton {
+  background-color: Purple;
+  border: 1px solid indigo;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 3px;
+  position: relative;
+  left: 77%;
+}
+
+
+#cancelButton {
+  background-color: Gainsboro;
+  border: 1px solid grey;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 3px;
+  position: relative;
+  left: 77%;
+}
+
+.doneButton {
+  position: relative;
+  left: 60%;
+}
+
+.newPos {
+  border-radius: 5px;
+}

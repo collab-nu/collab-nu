@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> CollabNU - Create a Project. </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/project_create_css.css">
+  <script type="text/javascript" src="../js/project_create.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+				<a onClick="window.location.href='./home_user.html'" class="navbar-brand">Collab<b>NU</b></a>
+			<form class="form-inline">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+			<a href=""><p>User Name</p></a>
+			</nav>
+    <div>
+    <div class="project-card">
+        <div class="project-text-all">
+        <div class="project-text-title">
+        <input class ="titlefield" id="name-field" name="namefield" type="text" placeholder="Project Name "> <b class="required"> *</b> <br>
+        </div>
+        <div class="project-info">
+        <div class="project-text-reg">
+        <textarea class ="genfield" id="desc-field" name="descfield" type="text" placeholder="Description" maxlength="600"></textarea><b class="required"> *</b> <br>
+        </div> <div class="project-text-reg">
+        <textarea class ="genfield" id="contact-field" name="contactfield" type="text" placeholder="Contact Info" maxlength="300"></textarea><b class="required"> *</b><br>
+        </div>
+        <div class="project-text-reg">
+        <textarea class ="genfield" id="time-field" name="timefield" type="text" placeholder="Meeting Times" maxlength="200"></textarea> <b class="required"> *</b> <br>
+      </div></div> <label class=imageUp> <input type="file"/> + Add Photos </label>
+        </div>
+        </div>
+        <div class="reqskillsbar">
+        <div class="skillbarheader"> Positions/Skills: </div>
+        <div id="positions">
+        <input id="addPosition" class="addPos" type="button" value="+ Add Position" onClick="openRole()">
+        </div>
+        </div>
+        <div>
+          <button id="cancelButton" onClick="window.location.href='./home_user.html'"> Cancel </button>
+          <button id="submitButton" onClick="window.location.href='./project_view.html'"> Submit </button>
+        </div>
+          </div>
+    </body>
+</html>
