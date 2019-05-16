@@ -6,16 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/project_view.css">
+<link rel="stylesheet" href="../css/home_default.css">
 <body>
-	<nav class="navbar navbar-light bg-light">
-				<a class="navbar-brand">Collab<b>NU</b></a>
-			<form class="form-inline">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	<nav class="nav_home navbar navbar-light bg-light">
+		<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
+			<form class="form-inline search-bar">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
-			<a href=""><p>User Name</p></a>
+			<p id="sign-in" class="sign-btn">Username</p>
 			</nav>
-	<button class="btn btn-info" href="project_create.html">Edit Project</button>
+	<button onClick="window.location.href='./project_create.html'" class="btn btn-info" href="project_create.html">Edit Project</button>
 	<div class="project-card">
 		<div class="project-text">
 			<div class="project-text-title">
@@ -42,7 +43,7 @@
 				<p>Positions</p>
 			</div>
 		</div>
-		<div class="project-image"> 
+		<div class="project-image">
 			<img src="../images/clarinet.jpg">
 		</div>
 		<div style="clear: both;"></div>
