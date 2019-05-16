@@ -1,0 +1,65 @@
+img {
+	max-height: 400px;
+}
+
+.project-card {
+	
+}
+.project-text {
+	margin-left: 5px;
+	float: left;
+	display: inline;
+	width: 50%;
+}
+.project-text-title {
+	font-size: 40pt;
+	margin: 0;
+}
+.project-text-owner {
+	float: right;
+	margin-right: 40px;
+}
+.project-text-owner-content {
+	font-style: italic;
+}
+.project-text-head {
+	font-size: 24pt;
+	
+}
+.project-text-desc {
+	margin-left: 15px;
+}
+.project-text-contact {
+	margin-left: 15px;
+}
+.project-text-mt {
+	margin-left: 15px;
+}
+.project-image {
+	width: 45%;
+	float: right;
+	margin-top: 10px;
+	margin-right: 5px;
+	
+}
+.position-cards {
+	width: 95%;
+	margin-left: 5px;
+}
+
+.col-xs-4 {
+	border-style: solid;
+	padding: 5px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+.pos-title {
+	font-size: 18pt;
+}
+.pos-desc {
+	font-size: 15pt;
+}
+.btn-primary {
+	background-color: purple !important;
+	border-color: #8064A2 !important;
+}
