@@ -1,0 +1,58 @@
+body {
+
+}
+
+h1 {
+	padding-top: 10px;
+}
+.item-wrapper {
+	text-align: left;
+	padding: 30px;
+}
+
+.grid-container {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.item-tag {
+
+}
+.item-image {
+	display: inline-grid;
+	width: 270px;
+	height: 190px;
+	border-radius: 5px;
+
+}
+
+.item-text {
+	text-align: left;
+	margin: 0px;
+	font-family: roboto;
+	line-height: 20px;
+}
+
+.item-text.item-tag {
+	color: rgb(118 118 118);
+}
+
+.item-text.item-title {
+	font-weight: bold;
+}
+
+.item-text.item-author {
+
+}
+.new-project-box {
+	width: 270px;
+	height: 190px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	border-style: solid;
+	border-width: 2px;
+}
+.material-icons.add-icon {
+	font-size: 80px;
+}
