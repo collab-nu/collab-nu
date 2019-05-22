@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/project_view.css">
 <link rel="stylesheet" href="../css/home_default.css">
-<script type="text/javascript" src="../js/project_view.js"></script>
 <body>
 	<nav class="nav_home navbar navbar-light bg-light">
 		<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
@@ -17,23 +16,7 @@
 			</form>
 			<p id="sign-in" class="sign-btn">Username</p>
 			</nav>
-	<div class="apply-overlay" id="vio-apply"> <div class="overlay-form">
-	 <div class="overlay-title"> Application for Position 1 - Violinist</div>
-	 <div class="overlay-input-wrapper"> <p class="pos-title">Name: </p><input class="inputfield" placeholder="Name..." /> </div>
- 	 <div class="overlay-input-wrapper"> <p class="pos-title">Email: </p><input class="inputfield" placeholder="Email..." /> </div>
-	 <div class="overlay-input-wrapper"> <p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." /> </div>
-	 <div class="overlay-input-wrapper"><p class="pos-title">Skills/Qualifications: </p>
-	 <textarea class ="genfield" placeholder="Description" maxlength="400"></textarea> </div>
-	 <input class="submitButton" type="button" value="Submit" onClick="hideOverlay('vio')">
-	</div> </div>
-	<div class="apply-overlay" id="harp-apply"> <div class="overlay-form">
-		<div class="overlay-title"> Application for Position 1 - Harpist</div>
-		<div class="overlay-input-wrapper"> <p class="pos-title">Name: </p><input class="inputfield" placeholder="Name..." /> </div>
-		<div class="overlay-input-wrapper"> <p class="pos-title">Email: </p><input class="inputfield" placeholder="Email..." /> </div>
-		<div class="overlay-input-wrapper"> <p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." /> </div>
-		<div class="overlay-input-wrapper"><p class="pos-title">Skills/Qualifications: </p>
-		<textarea class ="genfield" placeholder="Description" maxlength="400"></textarea> </div>
-		<input class="submitButton" type="button" value="Submit" onClick="hideOverlay('harp')"> </div> </div>
+	<button onClick="window.location.href='./project_create.html'" class="btn btn-info" href="project_create.html">Edit Project</button>
 	<div class="project-card">
 		<div class="project-text">
 			<div class="project-text-title">
@@ -70,12 +53,10 @@
         	<div class="col-xs-4">
         		<div class="pos-title">Position 1 - Violinist</div>
         		<div class="pos-desc"> We'd like a talented violinist with 5-10 years of experience to join our team. Please be proficient in playing in windy environments like the Lakefill. If this performance is a hit, look forward to exposure on local news stations and our social media platforms! </div>
-        		<button id="vio-button" class="btn btn-primary" href="project_create.html" onClick="showOverlay('vio')">Apply</button>
         	</div>
         	<div class="col-xs-4">
         		<div class="pos-title">Position 2 - Harpist</div>
         		<div class="pos-desc"> We'd like a talented violinist with 3-5 years of experience to join our team. Please be proficient in playing in noisy environments like Tech Plaza. If this performance is a hit, look forward to exposure on local news stations and our social media platforms! </div>
-        		<button id="harp-button" class="btn btn-primary" href="project_create.html" onClick="showOverlay('harp')">Apply</button>
         	</div>
       </div>
 	</div>
