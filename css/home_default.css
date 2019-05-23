@@ -120,6 +120,52 @@ body{
   background: #f1f1f1;
 }
 
+
+#myForm {
+  display: none;
+  position: fixed;
+  top: auto;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 90;
+  height: 200px;
+}
+
+#myFilter {
+  position: fixed;
+  top: auto;
+  width: 500px;
+  height: 160px;
+  display: none;
+  margin-top: 110px;
+  margin-left: 110px;
+  padding-top: 20px;
+  padding-left: 20px;
+  z-index: 90;
+  background-color: white;
+  border: solid;
+  border-color: gray;
+  border-width: 1px;
+}
+
+.filter-heading {
+  display: inline-block;
+  padding-top: -10px;
+  padding-bottom: 20px;
+}
+.material-icons.x-button {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  color: purple;
+}
+
+
+.btn-primary.btn {
+  background-color: purple;
+}
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
   background-color: #ddd;
@@ -132,6 +178,7 @@ body{
   color: white;
   padding: 16px 20px;
   border: none;
+  outline: none;
   cursor: pointer;
   width: 100%;
   /*margin-bottom:10px;*/
