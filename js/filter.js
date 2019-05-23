@@ -109,6 +109,24 @@ function filter(term) {
   grid.innerHTML = "";
   grid.appendChild(secTitle);
   grid.appendChild(row);
+    if (window.location.href.split("/").slice(-1) == "home_user.html") {
+    var wrapper = document.createElement('div');
+    var link = document.createElement('a');
+    var new_proj = document.createElement('div');
+    var add_icon = document.createElement('i');
+    var add_txt = document.createElement('p');
+    wrapper.classList.add("col-3", "item-wrapper");
+    link.href = "project_create.html";
+    new_proj.classList.add("new-project-box");
+    add_icon.classList.add("material-icons", "add-icon");
+    add_icon.innerHTML = "add_circle";
+    add_txt.innerHTML = "Add Project";
+    wrapper.appendChild(link);
+    link.appendChild(new_proj);
+    new_proj.appendChild(add_icon);
+    new_proj.appendChild(add_txt);
+    row.appendChild(wrapper);
+  }
   for (var i=0; i<sections.length; i++) {
     if (sections[i].searchTerm == term) {
       for (var z=0; z<sections[i].items.length; z++) {
@@ -142,4 +160,5 @@ function filter(term) {
       }
     }
   }
+
 }
