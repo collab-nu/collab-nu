@@ -145,3 +145,34 @@ img {
   color: Gainsboro;
   background-color: indigo;
 }
+.form-popup {
+  display: none;
+  position: fixed;
+  top: auto;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 90;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  /*margin-bottom:10px;*/
+  /*opacity: 0.8;*/
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
