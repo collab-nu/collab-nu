@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="../css/project_create_css.css">
   <script type="text/javascript" src="../js/project_create.js"></script>
   <link rel="stylesheet" href="../css/home_default.css">
+  <script type="text/javascript" src="../js/navbar.js"></script>
   </head>
   <body>
     <nav class="nav_home navbar navbar-light bg-light">
@@ -13,8 +14,14 @@
   			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
   			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   			</form>
-  			<p id="sign-in" class="sign-btn">Username</p>
+  			<p onclick="openForm()" id="sign-in" class="sign-btn">Username</p>
   			</nav>
+        <div class="form-popup" id="myForm">
+  	      <div class="form-container">
+  	        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
+  	        <button class="btn cancel" onclick="closeForm()">Close</button>
+  	      </div>
+  	    </div>
     <div>
     <div class="project-card">
         <div class="project-text-all">
@@ -33,8 +40,10 @@
         </div>
         </div>
         <div class="reqskillsbar">
-        <div class="skillbarheader"> Positions/Skills: </div>
+        <div class="skillbarheader"> Positions/Skills Wanted: </div>
         <div id="positions">
+        </div>
+        <div>
         <input id="addPosition" class="addPos" type="button" value="+ Add Position" onClick="openRole()">
         </div>
         </div>

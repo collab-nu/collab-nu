@@ -5,6 +5,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+			<script type="text/javascript" src="../js/navbar.js"></script>
 		<body>
 			<nav class="nav_home navbar navbar-light bg-light">
 	  			<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
@@ -12,9 +13,14 @@
 		  			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 		  			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 	  			</form>
-	  			<p id="sign-in" class="sign-btn">Username</p>
+	  			<p onclick="openForm()" id="sign-in" class="sign-btn">Username</p>
 	  	</nav>
-
+			<div class="form-popup" id="myForm">
+	      <div class="form-container">
+	        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
+	        <button class="btn cancel" onclick="closeForm()">Close</button>
+	      </div>
+	    </div>
 			<div class="grid-container">
 				<h1 class="section-title">My Projects</h1>
 				<div class="row">
