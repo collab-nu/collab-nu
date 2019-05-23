@@ -10,9 +10,16 @@
 			<nav class="nav_home navbar navbar-light bg-light">
 	  			<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
 	  			<form class="form-inline search-bar">
-		  			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		  			<input onclick="openFilter()" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 		  			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 	  			</form>
+	  			<div id="myFilter">
+	  				<h1 class="filter-heading"> Suggested Categories </h1>
+	  				<i onclick="closeFilter()" class="material-icons x-button"> close </i>
+	  				<input class="btn btn-primary" type="button" value="Music">
+					<input class="btn btn-primary" type="submit" value="Arts">
+					<input class="btn btn-primary" type="reset" value="Jazz">
+	  			</div>
 	  			<p onclick="openForm()" id="sign-in" class="sign-btn">Username</p>
 	  	</nav>
 			<div class="form-popup" id="myForm">
@@ -25,10 +32,12 @@
 				<h1 class="section-title">My Projects</h1>
 				<div class="row">
 					<div class="col-3 item-wrapper">
+						<a onClick="window.location.href='./project_view.html'">
 						<img class="item-image" src="../images/kitten.jpg">
 						<p class="item-text item-tag"> Music | Arts </p>
 						<h3 class="item-text item-title"> Pryan's BlarinetPalooza </h3>
 						<p class="item-text item-author"> Pryan Bardo </p>
+						</a>
 					</div>
 					<div class="col-3 item-wrapper">
 						<img class="item-image" src="../images/kitten.jpg">
