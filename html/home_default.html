@@ -3,15 +3,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/home_default.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script type="text/javascript" src="../js/home_default.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
+    <script type="text/javascript" src="../js/filter.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <nav class="nav_home navbar navbar-light bg-light">
       <a onClick="window.location.href='./home_default.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
-        <form class="form-inline search-bar">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+      <form class="form-inline search-bar">
+        <input onclick="openFilter()" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <div id="myFilter">
+        <h1 class="filter-heading"> Suggested Categories </h1>
+        <i onclick="closeFilter()" class="material-icons x-button"> close </i>
+        <input class="btn btn-primary" type="button" value="Music" onClick="filter('Music')">
+      <input class="btn btn-primary" type="submit" value="Arts">
+      <input class="btn btn-primary" type="reset" value="Jazz">
+      <input class="btn btn-primary" type="reset" value="Sports" onClick="filter('Sports')">
+      </div>
         <p onclick="openForm()" id="sign-in" class="sign-btn">Sign In</p>
     </nav>
     <div class="form-popup" id="myForm">
@@ -29,7 +40,7 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-1 grid-container">
+    <div id="grid-container" class="container-fluid bg-1 grid-container">
       <h1 class="section-title">New & Recommended</h1>
       <div class="row">
         <div class="col-3 item-wrapper">

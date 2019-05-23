@@ -6,6 +6,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 		<script type="text/javascript" src="../js/navbar.js"></script>
+		<script type="text/javascript" src="../js/filter.js"></script>
 		<body>
 			<nav class="nav_home navbar navbar-light bg-light">
 	  			<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
@@ -16,9 +17,10 @@
 	  			<div id="myFilter">
 	  				<h1 class="filter-heading"> Suggested Categories </h1>
 	  				<i onclick="closeFilter()" class="material-icons x-button"> close </i>
-	  				<input class="btn btn-primary" type="button" value="Music">
+	  				<input class="btn btn-primary" type="button" value="Music" onClick="filter('Music')">
 					<input class="btn btn-primary" type="submit" value="Arts">
 					<input class="btn btn-primary" type="reset" value="Jazz">
+					<input class="btn btn-primary" type="reset" value="Sports" onClick="filter('Sports')">
 	  			</div>
 	  			<p onclick="openForm()" id="sign-in" class="sign-btn">Username</p>
 	  	</nav>

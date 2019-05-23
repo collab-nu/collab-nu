@@ -6,50 +6,50 @@ var sections = [
       tag : "Music | Drama",
       title : "The Dolphin Show XVII",
       author : "dolphShow",
-      image : "../images/dolphin.jpg"
+      image : "../images/kitten.jpg"
     },
     {
       tag : "Music | Film",
       title : "My First Film",
       author : "SofSpiel",
-      image : "../images/film.jpg"
+      image : "../images/kitten.jpg"
     },
     {
       tag : "Music | Arts",
       title : "Pryan's BlarinetPalooza",
       author : "Pryan Bardo",
-      image : "../images/blarinet.jpg"
+      image : "../images/kitten.jpg"
     },
     {
       tag : "Music | Arts",
       title : "Bardo's Clarinet Palooza",
       author : "Pryan Bardo",
-      image : "../images/clarinet.jpg",
+      image : "../images/kitten.jpg",
       href : "project_view.html"
     },
     {
       tag: "Music",
       title: "Jazz Band",
       author: "jazzyMan",
-      image: "../images/jazz.jpg"
+      image: "../images/kitten.jpg"
     },
     {
       tag: "Music",
       title: "Orchestra - Violin Needed!",
       author: "desperate grad",
-      image: "../images/violin.jpg"
+      image: "../images/kitten.jpg"
     },
     {
       tag: "Music | Writing",
       title: "Soundtrack for My Book",
       author: "payinexposure",
-      image: "../images/book.jpg"
+      image: "../images/kitten.jpg"
     },
     {
       tag: "Music",
       title: "Jam Session",
       author: "unemployed",
-      image: "../images/jam.jpg"
+      image: "../images/kitten.jpg"
     }
 
   ]
@@ -61,37 +61,37 @@ var sections = [
       tag: "Sports",
       title: "IM - Basketball",
       author: "basketcase",
-      image: "../images/basketball.jpg"
+      image: "../images/kitten.jpg"
     },
     {
       tag: "Sports | Drama",
       title: "Baseball players needed for chorus!",
       author: "idontdance",
-      image: "../images/baseball.jpg"
+      image: "../images/kitten.jpg"
     },
     {
       tag: "Sports",
       title: "IM - Soccer",
       author: "brazilian",
-      image: "../images/soccer.jpg"
+      image: "../images/kitten.jpg"
     },
     {
       tag: "Sports | Games",
       title: "Fantasy Football Anyone?",
       author: "Josh Smith",
-      image: "../images/football.jpg"
+      image: "../images/kitten.jpg"
     },
     {
       tag: "Sports",
       title: "IM Team",
       author: "vague",
-      image: "../images/jersey.jpg"
+      image: "../images/kitten.jpg"
     },
     {
       tag: "Sports | Food",
       title: "Team Cook Needed!",
       author: "cookiemonster",
-      image: "../images/cookie.jpg"
+      image: "../images/kitten.jpg"
     }
   ]
   }
@@ -124,7 +124,7 @@ function filter(term) {
         tag.classList.add("item-text","item-tag");
         tag.innerHTML = sections[i].items[z].tag
         img.classList.add("item-image");
-        img.src = "../images/kitten.jpg"//sections[i].items[z].image;
+        img.src = sections[i].items[z].image;
         itemWrapper.classList.add("col-3","item-wrapper")
         if (sections[i].items[z].href != null) {
           console.log("Fourth Layer??")
