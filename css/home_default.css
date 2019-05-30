@@ -16,7 +16,7 @@ body{
 
 .notif-button{
   position: relative;
-  left: 60%;
+  left: 45%;
   background-color: Purple;
   border: 1px solid indigo;
   border-radius: 5px;
@@ -35,7 +35,7 @@ body{
 
 #sign-in{
   position: relative;
-  margin-left: 65%;
+  margin-left: 50%;
   padding-top: 10px;
 }
 
