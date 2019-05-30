@@ -3,7 +3,9 @@ function openForm() {
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+	if (document.getElementById("myForm").style.display == "block") {
+  		document.getElementById("myForm").style.display = "none";
+  	}
 }
 
 function openFilter() {

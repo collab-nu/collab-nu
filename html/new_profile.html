@@ -1,0 +1,79 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/project_view.css">
+<link rel="stylesheet" href="../css/home_default.css">
+<link rel="stylesheet" href="../css/new_profile.css">
+<link rel="stylesheet" type="text/css" href="../css/project_create_css.css">
+<script type="text/javascript" src="../js/project_create.js"></script>
+<script type="text/javascript" src="../js/navbar.js"></script>
+	<body>
+
+				<nav class="nav_home navbar navbar-light bg-light">
+  			<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
+  			<form class="form-inline search-bar">
+	  			<input onclick="openFilter()" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	  			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  			</form>
+  			<div id="myFilter">
+  				<h1 class="filter-heading"> Suggested Categories </h1>
+  				<i onclick="closeFilter()" class="material-icons x-button"> close </i>
+  				<input class="btn btn-primary" type="button" value="Music" onClick="filter('Music')">
+				<input class="btn btn-primary" type="submit" value="Arts">
+				<input class="btn btn-primary" type="reset" value="Jazz">
+				<input class="btn btn-primary" type="reset" value="Sports" onClick="filter('Sports')">
+  			</div>
+  			<p onclick="openForm()" id="sign-in" class="sign-btn">Username</p>
+  	</nav>
+		<div class="form-popup" id="myForm">
+      <div class="form-container">
+      	<button onclick="window.location.href='./powofile.html';" class="btn" id="pwo">~Viuwu youw pwofile~ OwO</button>
+        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
+        <button class="btn cancel" onclick="closeForm()">Close</button>
+      </div>
+    </div>
+
+        <div class="project-card">
+        <div class="project-text-all">
+
+        <div class="project-text-title">
+        <input class ="titlefield" id="profile_name-field" type="text" placeholder="Full Name"> <b class="required"> *</b> <br>
+        </div>
+
+
+        <div class="project-info">
+
+        <div class="project-text-reg">
+        <textarea class ="genfield" id="desc-field" name="descfield" type="text" placeholder="Bio - Tell us about yourself!" maxlength="600"></textarea><b class="required"> *</b> <br>
+        </div> 
+
+        
+        <div class="project-text-reg">
+        <textarea class ="genfield" id="contact-field" name="contactfield" type="text" placeholder="Skills/Experience" maxlength="300"></textarea>
+        <b class="required"> *</b> <br>
+        </div>
+
+		<div class="project-text-reg">
+        <textarea class ="genfield" id="contact-field" name="contactfield" type="text" placeholder="Contact Info" maxlength="300"></textarea>
+        <b class="required"> *</b> <br>
+        </div>
+
+        <div class="project-text-reg">
+        <textarea class ="genfield" id="time-field" name="timefield" type="text" placeholder="Location/Availability" maxlength="200"></textarea> 
+        <b class="required"> *</b> <br>
+      	</div>
+
+      </div> 
+
+      <label class="imageUp"> <input type="file"/> + Add Photos </label>
+        </div>
+        </div>
+
+        <div class="button-wrapper">
+          <button id="cancelButton" onClick="window.location.href='./home_user.html'"> Cancel </button>
+          <button id="submitButton" onClick="window.location.href='./profile_view.html'"> Submit </button>
+        </div>
+          </div>
+	</body>
+</head>
+</html>

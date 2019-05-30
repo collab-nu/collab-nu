@@ -1,0 +1,17 @@
+body{}
+
+#profile_name-field {
+	position: relative;
+  width: 60%;
+  font-size: 120%;
+  padding-left: 0.2em;
+  background-color: #F8F8F8;
+  resize: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.button-wrapper {
+	padding-bottom: 30px;
+	padding-top: 50px;
+}
