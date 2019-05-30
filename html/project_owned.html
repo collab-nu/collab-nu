@@ -7,7 +7,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="../css/project_view.css">
 <link rel="stylesheet" href="../css/home_default.css">
+<link rel="stylesheet" href="../css/project_owned.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <script type="text/javascript" src="../js/navbar.js"></script>
+<script type="text/javascript" src="../js/project_owned.js"></script>
 <body>
 	<nav class="nav_home navbar navbar-light bg-light">
 		<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
@@ -24,6 +27,45 @@
 	      </div>
 	    </div>
 	<button onClick="window.location.href='./project_create.html'" class="btn btn-info" href="project_create.html">Edit Project</button>
+
+	<div class="new-app-overlay" id="new_app_overlay"> <div class="new-app-overlay-form">
+	 <div class="application-overlay-title"> New Applications</div>
+	 <div class="application-wrapper">
+		 <div class="application-title-wrapper">
+			 <img src="../images/swaddle.png" class="application-image"></img>
+			 <h1 class="application-name">Jason Bourne - Violinist</h1>
+			 <p class="application-user-info">jbourne@northwestern.edu</p>
+	 			<p class="application-user-info">123-456-7890</h2>
+	 			<p class="application-desc">
+	 				My name is Jason Bourne, star of all the Jason Bourne Films. I would like to join
+	 				Pardo's Clarinet Palooza because I feel like all my life has led up to this.
+	 			</p>
+	 			<button onClick="acceptViolin()"class=accept-button id=accept-violin>Accept</button>
+	 			<button onClick="declineViolin()"class=decline-button id=decline-violin>Decline</button>
+				<p id=app-accept-1 class=result-text>This applicant has been accepted!</p>
+				<p id=app-decline-1 class=result-text>This applicant has been declined.</p>
+		 </div>
+	 </div>
+	 <div class="application-wrapper">
+		<div class="application-title-wrapper">
+			<img src="../images/swaddle.png" class="application-image"></div>
+			<h1 class="application-name">Bason Journe - Harpist</h1>
+			<p class="application-user-info">bjourne@northwestern.edu</p>
+			<p class="application-user-info">123-456-7890</h2>
+			<p class="application-desc">
+				My name is Jason Bourne, star of all the Jason Bourne Films. I would like to join
+				Pardo's Clarinet Palooza because I feel like all my life has led up to this.
+			</p>
+			<button onClick="acceptHarp()"class=accept-button id=accept-harp>Accept</button>
+			<button onClick="declineHarp()"class=decline-button id=decline-harp>Decline</button>
+			<p id=app-accept-2 class=result-text>This applicant has been accepted!</p>
+			<p id=app-decline-2 class=result-text>This applicant has been declined.</p>
+		</div>
+
+		 <input class="appSubmitButton" type="button" value="Done" onClick="hideNewAppOverlay()">
+	 </div>
+	</div>
+
 	<div class="project-card">
 		<div class="project-text">
 			<div class="project-text-title">
@@ -48,6 +90,7 @@
 			<p class="project-text-mt">MWF 3-3:50PM</p>
 			<div class="project-text-head">
 				<p>Positions</p>
+				<button class="newAppButton" onClick="showNewApps()" id=new_apps>View New Applications!</button>
 			</div>
 		</div>
 		<div class="project-image">
