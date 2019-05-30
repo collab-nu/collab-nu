@@ -212,3 +212,58 @@ body{
 .material-icons.add-icon {
 	font-size: 80px;
 }
+
+.notifbar {
+  position: absolute;
+  display: none;
+  width: 350px;
+  height: 600px;
+  top: auto;
+  left: 70%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 2;
+}
+
+.tiNot {
+  border-bottom: 1px solid black;
+  height: 8%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.smallOut {
+  position: relative;
+  left: -20px;
+  height: 15px;
+  width: 15px;
+}
+
+.indNot {
+  height: 20%;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.notImg {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.notText {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 60%;
+  margin-right: 5%;
+  height: 80%;
+  margin-top: 3%;
+}
+
+.indNot:hover {
+  background-color: WhiteSmoke;
+}
