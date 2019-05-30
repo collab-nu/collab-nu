@@ -14,6 +14,15 @@ function closeFilter() {
 	document.getElementById("myFilter").style.display = "none";
 }
 
+function openNotif() {
+  document.getElementById("MyNotifs").style.display = "block";
+  console.log("jesus");
+}
+
+function closeNotif() {
+    document.getElementById("MyNotifs").style.display = "none";
+}
+
 function redirect() {
   var login = document.getElementById("login");
   location.href = "/home_user.html";
