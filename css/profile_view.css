@@ -1,5 +1,5 @@
 img {
-	max-height: 400px;
+	max-height: 500px;
 }
 
 .project-card {
@@ -26,13 +26,8 @@ img {
 	font-size: 24pt;
 
 }
-.project-text {
-	margin-left: 15px;
-}
-.project-text-contact {
-	margin-left: 15px;
-}
-.project-text-mt {
+
+.project-text-content {
 	margin-left: 15px;
 }
 .project-image {
