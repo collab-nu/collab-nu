@@ -11,6 +11,8 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <script type="text/javascript" src="../js/navbar.js"></script>
 <script type="text/javascript" src="../js/project_owned.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
 <body>
 	<nav class="nav_home navbar navbar-light bg-light">
 		<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
@@ -18,8 +20,31 @@
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
+			<input type="button" class=notif-button value="Notifications" onClick="openNotif()">
 			<p onClick="openForm()" id="sign-in" class="sign-btn">Username</p>
 			</nav>
+			<div id="MyNotifs" class="notifbar">
+				<div class="tiNot"> Notifications
+					<i onclick="closeNotif()" class="material-icons x-button smallOut"> close </i>
+				</div>
+				<div class="indNot" onClick="window.location.href='./project_owned.html';">
+					<img src="../images/clarinet.jpg" class="notImg"> </img>
+					<div class="notText"> Bob Bobbington has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
+				</div>
+				<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Your application to IM Team by vague was accepted! Woohoo! Click to view project. </div>
+				</div>
+			 	<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Wilson Willersmith has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
+				</div>
+				<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> John jobson has applied to your project Cheezit Construction Party	! Click to view project. </div>
+		 		</div>
+		 	</div>
+			<div class="form-popup" id="myForm">
+	      <div class="form-container">
+	      	<button onclick="window.location.href='./profile_view.html';" class="btn" id="pwo">View your Profile</button>
+	        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
+	        <button class="btn cancel" onclick="closeForm()">Close</button>
+	      </div>
+	    </div>
 			<div class="form-popup" id="myForm">
 	      <div class="form-container">
 	        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
@@ -38,7 +63,7 @@
 	 			<p class="application-user-info">123-456-7890</h2>
 	 			<p class="application-desc">
 	 				My name is Jason Bourne, star of all the Jason Bourne Films. I would like to join
-	 				Pardo's Clarinet Palooza because I feel like all my life has led up to this.
+	 				Bardo's Clarinet Palooza because I feel like all my life has led up to this.
 	 			</p>
 	 			<button onClick="acceptViolin()"class=accept-button id=accept-violin>Accept</button>
 	 			<button onClick="declineViolin()"class=decline-button id=decline-violin>Decline</button>
@@ -53,8 +78,8 @@
 			<p class="application-user-info">bjourne@northwestern.edu</p>
 			<p class="application-user-info">123-456-7890</h2>
 			<p class="application-desc">
-				My name is Jason Bourne, star of all the Jason Bourne Films. I would like to join
-				Pardo's Clarinet Palooza because I feel like all my life has led up to this.
+				My name is Jason Bourne, star of all the Bason Journe Films. I would like to join
+				Bardo's Clarinet Palooza because I feel like all my life has led up to this.
 			</p>
 			<button onClick="acceptHarp()"class=accept-button id=accept-harp>Accept</button>
 			<button onClick="declineHarp()"class=decline-button id=decline-harp>Decline</button>
