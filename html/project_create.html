@@ -6,6 +6,8 @@
   <script type="text/javascript" src="../js/project_create.js"></script>
   <link rel="stylesheet" href="../css/home_default.css">
   <script type="text/javascript" src="../js/navbar.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
   </head>
   <body>
     <nav class="nav_home navbar navbar-light bg-light">
@@ -14,8 +16,31 @@
   			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
   			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   			</form>
+        <input type="button" class=notif-button value="Notifications" onClick="openNotif()">
   			<p onclick="openForm()" id="sign-in" class="sign-btn">Username</p>
-  			</nav>
+			</nav>
+      <div id="MyNotifs" class="notifbar">
+				<div class="tiNot"> Notifications
+					<i onclick="closeNotif()" class="material-icons x-button smallOut"> close </i>
+				</div>
+				<div class="indNot" onClick="window.location.href='./project_owned.html';">
+					<img src="../images/clarinet.jpg" class="notImg"> </img>
+					<div class="notText"> Bob Bobbington has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
+				</div>
+				<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Your application to IM Team by vague was accepted! Woohoo! Click to view project. </div>
+				</div>
+			 	<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Wilson Willersmith has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
+				</div>
+				<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> John jobson has applied to your project Cheezit Construction Party	! Click to view project. </div>
+		 		</div>
+		 	</div>
+			<div class="form-popup" id="myForm">
+	      <div class="form-container">
+	      	<button onclick="window.location.href='./profile_view.html';" class="btn" id="pwo">View your Profile</button>
+	        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
+	        <button class="btn cancel" onclick="closeForm()">Close</button>
+	      </div>
+	    </div>
         <div class="form-popup" id="myForm">
   	      <div class="form-container">
   	        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>

@@ -19,50 +19,73 @@
 				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 			</form>
+      <input type="button" class=notif-button value="Notifications" onClick="openNotif()">
 			<p onClick="openForm()" id="sign-in" class="sign-btn">Username</p>
 			</nav>
+      <div id="MyNotifs" class="notifbar">
+				<div class="tiNot"> Notifications
+					<i onclick="closeNotif()" class="material-icons x-button smallOut"> close </i>
+				</div>
+				<div class="indNot" onClick="window.location.href='./project_owned.html';">
+					<img src="../images/clarinet.jpg" class="notImg"> </img>
+					<div class="notText"> Bob Bobbington has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
+				</div>
+				<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Your application to IM Team by vague was accepted! Woohoo! Click to view project. </div>
+				</div>
+			 	<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Wilson Willersmith has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
+				</div>
+				<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> John jobson has applied to your project Cheezit Construction Party	! Click to view project. </div>
+		 		</div>
+		 	</div>
+			<div class="form-popup" id="myForm">
+	      <div class="form-container">
+	      	<button onclick="window.location.href='./profile_view.html';" class="btn" id="pwo">View your Profile</button>
+	        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
+	        <button class="btn cancel" onclick="closeForm()">Close</button>
+	      </div>
+	    </div>
 			<div class="form-popup" id="myForm">
 	      <div class="form-container">
 	        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
 	        <button class="btn cancel" onclick="closeForm()">Close</button>
 	      </div>
 	    </div>
-	<div class="apply-overlay" id="vio-apply"> 
+	<div class="apply-overlay" id="vio-apply">
 		<div class="overlay-form">
 		 	<div class="overlay-title"> Application for Position 1 - Violinist</div>
-		 	<div class="overlay-input-wrapper"> 
+		 	<div class="overlay-input-wrapper">
 		 		<p class="pos-title">Name: </p>
-		 		<input class="inputfield" placeholder="Name..." /> 
+		 		<input class="inputfield" placeholder="Name..." />
 		 	</div>
-	 	 	<div class="overlay-input-wrapper"> 
+	 	 	<div class="overlay-input-wrapper">
 	 	 		<p class="pos-title">Email: </p>
-	 	 		<input class="inputfield" placeholder="Email..." /> 
+	 	 		<input class="inputfield" placeholder="Email..." />
 	 	 	</div>
-		 	<div class="overlay-input-wrapper"> 
-		 		<p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." /> 
+		 	<div class="overlay-input-wrapper">
+		 		<p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." />
 		 	</div>
 		 	<div class="overlay-input-wrapper">
 		 		<p class="pos-title">Skills/Qualifications: </p>
-		 		<textarea class ="genfield" placeholder="Description" maxlength="400"></textarea> 
+		 		<textarea class ="genfield" placeholder="Description" maxlength="400"></textarea>
 		 	</div>
 		 	<input class="submitButton" type="button" value="Submit" onClick="hideOverlay('vio')">
 		 	<button class="cancelButton" onclick="closeOverlay('vio')">Cancel</button>
-		</div> 
+		</div>
 	</div>
-	<div class="apply-overlay" id="harp-apply"> 
+	<div class="apply-overlay" id="harp-apply">
 		<div class="overlay-form">
 			<div class="overlay-title"> Application for Position 1 - Harpist</div>
-			<div class="overlay-input-wrapper"> 
-				<p class="pos-title">Name: </p><input class="inputfield" placeholder="Name..." /> 
+			<div class="overlay-input-wrapper">
+				<p class="pos-title">Name: </p><input class="inputfield" placeholder="Name..." />
 			</div>
-			<div class="overlay-input-wrapper"> 
+			<div class="overlay-input-wrapper">
 				<p class="pos-title">Email: </p><input class="inputfield" placeholder="Email..." /> </div>
-			<div class="overlay-input-wrapper"> 
-				<p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." /> 
+			<div class="overlay-input-wrapper">
+				<p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." />
 			</div>
 			<div class="overlay-input-wrapper">
 				<p class="pos-title">Skills/Qualifications: </p>
-				<textarea class ="genfield" placeholder="Description" maxlength="400"></textarea> 
+				<textarea class ="genfield" placeholder="Description" maxlength="400"></textarea>
 			</div>
 			<input class="submitButton" type="button" value="Submit" onClick="hideOverlay('harp')">
 			<button class="cancelButton" onclick="closeOverlay('harp')">Cancel</button>
