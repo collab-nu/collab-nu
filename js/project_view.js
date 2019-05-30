@@ -12,3 +12,8 @@ function hideOverlay(id) {
   button.innerHTML = "Applied";
   button.disabled = "true";
 }
+
+function closeOverlay(id) {
+	var overlay = document.getElementById(id + '-apply');
+  	overlay.style.display = "none";
+}

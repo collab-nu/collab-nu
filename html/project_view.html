@@ -24,23 +24,48 @@
 	        <button class="btn cancel" onclick="closeForm()">Close</button>
 	      </div>
 	    </div>
-	<div class="apply-overlay" id="vio-apply"> <div class="overlay-form">
-	 <div class="overlay-title"> Application for Position 1 - Violinist</div>
-	 <div class="overlay-input-wrapper"> <p class="pos-title">Name: </p><input class="inputfield" placeholder="Name..." /> </div>
- 	 <div class="overlay-input-wrapper"> <p class="pos-title">Email: </p><input class="inputfield" placeholder="Email..." /> </div>
-	 <div class="overlay-input-wrapper"> <p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." /> </div>
-	 <div class="overlay-input-wrapper"><p class="pos-title">Skills/Qualifications: </p>
-	 <textarea class ="genfield" placeholder="Description" maxlength="400"></textarea> </div>
-	 <input class="submitButton" type="button" value="Submit" onClick="hideOverlay('vio')">
-	</div> </div>
-	<div class="apply-overlay" id="harp-apply"> <div class="overlay-form">
-		<div class="overlay-title"> Application for Position 1 - Harpist</div>
-		<div class="overlay-input-wrapper"> <p class="pos-title">Name: </p><input class="inputfield" placeholder="Name..." /> </div>
-		<div class="overlay-input-wrapper"> <p class="pos-title">Email: </p><input class="inputfield" placeholder="Email..." /> </div>
-		<div class="overlay-input-wrapper"> <p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." /> </div>
-		<div class="overlay-input-wrapper"><p class="pos-title">Skills/Qualifications: </p>
-		<textarea class ="genfield" placeholder="Description" maxlength="400"></textarea> </div>
-		<input class="submitButton" type="button" value="Submit" onClick="hideOverlay('harp')"> </div> </div>
+	<div class="apply-overlay" id="vio-apply"> 
+		<div class="overlay-form">
+		 	<div class="overlay-title"> Application for Position 1 - Violinist</div>
+		 	<div class="overlay-input-wrapper"> 
+		 		<p class="pos-title">Name: </p>
+		 		<input class="inputfield" placeholder="Name..." /> 
+		 	</div>
+	 	 	<div class="overlay-input-wrapper"> 
+	 	 		<p class="pos-title">Email: </p>
+	 	 		<input class="inputfield" placeholder="Email..." /> 
+	 	 	</div>
+		 	<div class="overlay-input-wrapper"> 
+		 		<p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." /> 
+		 	</div>
+		 	<div class="overlay-input-wrapper">
+		 		<p class="pos-title">Skills/Qualifications: </p>
+		 		<textarea class ="genfield" placeholder="Description" maxlength="400"></textarea> 
+		 	</div>
+		 	<input class="submitButton" type="button" value="Submit" onClick="hideOverlay('vio')">
+		 	<button class="cancelButton" onclick="closeOverlay('vio')">Cancel</button>
+		</div> 
+	</div>
+	<div class="apply-overlay" id="harp-apply"> 
+		<div class="overlay-form">
+			<div class="overlay-title"> Application for Position 1 - Harpist</div>
+			<div class="overlay-input-wrapper"> 
+				<p class="pos-title">Name: </p><input class="inputfield" placeholder="Name..." /> 
+			</div>
+			<div class="overlay-input-wrapper"> 
+				<p class="pos-title">Email: </p><input class="inputfield" placeholder="Email..." /> </div>
+			<div class="overlay-input-wrapper"> 
+				<p class="pos-title">Available Times: </p><input class="inputfield" placeholder="Available Times..." /> 
+			</div>
+			<div class="overlay-input-wrapper">
+				<p class="pos-title">Skills/Qualifications: </p>
+				<textarea class ="genfield" placeholder="Description" maxlength="400"></textarea> 
+			</div>
+			<input class="submitButton" type="button" value="Submit" onClick="hideOverlay('harp')">
+			<button class="cancelButton" onclick="closeOverlay('harp')">Cancel</button>
+		</div>
+	</div>
+
 	<div class="project-card">
 		<div class="project-text">
 			<div class="project-text-title">

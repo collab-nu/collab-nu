@@ -136,9 +136,24 @@ img {
   border-radius: 5px;
   font-size: 1.2em;
   padding: 3px;
-	position: relative;
+	/*position: relative;*/
+  float: right;
+  margin-right: 75px;
 	top: 2%;
 	left: 81%;
+}
+.cancelButton {
+  background-color: Gainsboro;
+  border: 1px solid indigo;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2em;
+  padding: 3px;
+  /*position: relative;*/
+  float: right;
+  margin-right: 5px;
+  top: 2%;
+  left: 81%;
 }
 
 .submitButton:active {
