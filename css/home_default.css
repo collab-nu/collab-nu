@@ -9,14 +9,16 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-.nav_home{
-  justify-content: normal;
-
+.nav-shading{
+  box-shadow: 0px 5px 8px #888888;  
 }
 
+
 .notif-button{
-  position: relative;
-  left: 45%;
+  /*position: relative;
+  left: 45%;*/
+  cursor:pointer;
+  margin-right: 15px;
   background-color: Purple;
   border: 1px solid indigo;
   border-radius: 5px;
@@ -26,17 +28,19 @@ body{
 
 .project-name{
   cursor:pointer;
+  color: white;
 }
 
 .search-bar{
-  position: relative;
+  /*position: relative;*/
   margin-bottom: 0px;
 }
 
 #sign-in{
   position: relative;
-  margin-left: 50%;
-  padding-top: 10px;
+  /*margin-left: 50%;
+  padding-top: 10px;*/
+  color: white;
 }
 
 .sign-btn:hover{
@@ -147,8 +151,6 @@ body{
   width: 500px;
   height: 160px;
   display: none;
-  margin-top: 110px;
-  margin-left: 110px;
   padding-top: 20px;
   padding-left: 20px;
   z-index: 90;
