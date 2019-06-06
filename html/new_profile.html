@@ -7,114 +7,114 @@
 <link rel="stylesheet" type="text/css" href="../css/project_create_css.css">
 <script type="text/javascript" src="../js/project_create.js"></script>
 <script type="text/javascript" src="../js/navbar.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
-	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark nav-shading" style="background-color: #4B0082;">
-			<div class=" w-100 order-1 order-md-0 dual-collapse2">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
-					</li>
-					<li class="nav-item active">
-						<form class="form-inline search-bar">
-							<input onclick="openFilter()" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-						</form>
-						<div id="myFilter">
-							<h1 class="filter-heading"> Suggested Categories </h1>
-							<i onclick="closeFilter()" class="material-icons x-button"> close </i>
-							<div class="jasonbourne">
-								<input class="btn shit" type="button" value="Music" onClick="filter('Music')">
-								<input class="btn shit" type="submit" value="Arts">
-								<input class="btn shit" type="reset" value="Jazz">
-								<input class="btn shit" type="reset" value="Sports" onClick="filter('Sports')">
-							</div>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark nav-shading" style="background-color: #4B0082;">
+		<div class=" w-100 order-1 order-md-0 dual-collapse2">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
+				</li>
+				<li class="nav-item active">
+					<form class="form-inline search-bar">
+						<input onclick="openFilter()" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					</form>
+					<div id="myFilter">
+						<h1 class="filter-heading"> Suggested Categories </h1>
+						<i onclick="closeFilter()" class="material-icons x-button"> close </i>
+						<div class="jasonbourne">
+							<input class="btn shit" type="button" value="Music" onClick="filter('Music')">
+							<input class="btn shit" type="submit" value="Arts">
+							<input class="btn shit" type="reset" value="Jazz">
+							<input class="btn shit" type="reset" value="Sports" onClick="filter('Sports')">
 						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="navbar-nav w-100 order-3 dual-collapse2">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<i class="material-icons notif-button" onClick="openNotif()">notifications</i>
-					</li>
-					<li class="nav-item">
-						<p onclick="openForm()" id="sign-in" class="my-2 my-lg-0 sign-btn">Username</p>
-					</li>
-				</ul>
-			</div>
-	</nav>
-		<div id="MyNotifs" class="notifbar">
-			<div class="tiNot"> Notifications
-				<i onclick="closeNotif()" class="material-icons x-button smallOut"> close </i>
-			</div>
-			<div class="indNot" onClick="window.location.href='./project_owned.html';">
-				<img src="../images/clarinet.jpg" class="notImg"> </img>
-				<div class="notText"> Bob Bobbington has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
-			</div>
-			<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Your application to IM Team by vague was accepted! Woohoo! Click to view project. </div>
-			</div>
-			<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Wilson Willersmith has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
-			</div>
-			<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> John jobson has applied to your project Cheezit Construction Party	! Click to view project. </div>
-			</div>
+					</div>
+				</li>
+			</ul>
 		</div>
-		<div class="form-popup" id="myForm">
-			<div class="form-container">
-				<button onclick="window.location.href='./profile_view.html';" class="btn" id="pwo">View your Profile</button>
-				<button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
-				<button class="btn cancel" onclick="closeForm()">Close</button>
-			</div>
+		<div class="navbar-nav w-100 order-3 dual-collapse2">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<i class="material-icons notif-button" onClick="openNotif()">notifications</i>
+				</li>
+				<li class="nav-item">
+					<p onclick="openForm()" id="sign-in" class="my-2 my-lg-0 sign-btn">Username</p>
+				</li>
+			</ul>
 		</div>
-		<div class="form-popup" id="myForm">
-      <div class="form-container">
-      	<button onclick="window.location.href='./powofile.html';" class="btn" id="pwo">~Viuwu youw pwofile~ OwO</button>
-        <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
-        <button class="btn cancel" onclick="closeForm()">Close</button>
-      </div>
+</nav>
+	<div id="MyNotifs" class="notifbar">
+		<div class="tiNot"> Notifications
+			<i onclick="closeNotif()" class="material-icons x-button smallOut"> close </i>
+		</div>
+		<div class="indNot" onClick="window.location.href='./project_owned.html';">
+			<img src="../images/clarinet.jpg" class="notImg"> </img>
+			<div class="notText"> Bob Bobbington has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
+		</div>
+		<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Your application to IM Team by vague was accepted! Woohoo! Click to view project. </div>
+		</div>
+		<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> Wilson Willersmith has applied to your project Bardo's Clarinet Palooza! Click to view project. </div>
+		</div>
+		<div class="indNot"> <img src="../images/kitten.jpg" class="notImg"> </img> <div class="notText"> John jobson has applied to your project Cheezit Construction Party	! Click to view project. </div>
+		</div>
+	</div>
+	<div class="form-popup" id="myForm">
+		<div class="form-container">
+			<button onclick="window.location.href='./profile_view.html';" class="btn" id="pwo">View your Profile</button>
+			<button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
+			<button class="btn cancel" onclick="closeForm()">Close</button>
+		</div>
+	</div>
+	<div class="form-popup" id="myForm">
+  <div class="form-container">
+  	<button onclick="window.location.href='./powofile.html';" class="btn" id="pwo">~Viuwu youw pwofile~ OwO</button>
+    <button onclick="window.location.href='./home_default.html';" class="btn" id="login">Logout</button>
+    <button class="btn cancel" onclick="closeForm()">Close</button>
+  </div>
+</div>
+
+    <div class="project-card">
+    <div class="project-text-all">
+
+    <div class="project-text-title">
+    <input class ="titlefield" id="profile_name-field" type="text" placeholder="Full Name"> <b class="required"> *</b> <br>
     </div>
 
-        <div class="project-card">
-        <div class="project-text-all">
 
-        <div class="project-text-title">
-        <input class ="titlefield" id="profile_name-field" type="text" placeholder="Full Name"> <b class="required"> *</b> <br>
-        </div>
+    <div class="project-info">
 
-
-        <div class="project-info">
-
-        <div class="project-text-reg">
-        <textarea class ="genfield" id="desc-field" name="descfield" type="text" placeholder="Bio - Tell us about yourself!" maxlength="600"></textarea><b class="required"> *</b> <br>
-        </div>
+    <div class="project-text-reg">
+    <textarea class ="genfield" id="desc-field" name="descfield" type="text" placeholder="Bio - Tell us about yourself!" maxlength="600"></textarea><b class="required"> *</b> <br>
+    </div>
 
 
-        <div class="project-text-reg">
-        <textarea class ="genfield" id="contact-field" name="contactfield" type="text" placeholder="Skills/Experience" maxlength="300"></textarea>
-        <b class="required"> *</b> <br>
-        </div>
+    <div class="project-text-reg">
+    <textarea class ="genfield" id="contact-field" name="contactfield" type="text" placeholder="Skills/Experience" maxlength="300"></textarea>
+    <b class="required"> *</b> <br>
+    </div>
 
-		<div class="project-text-reg">
-        <textarea class ="genfield" id="contact-field" name="contactfield" type="text" placeholder="Contact Info" maxlength="300"></textarea>
-        <b class="required"> *</b> <br>
-        </div>
+	<div class="project-text-reg">
+    <textarea class ="genfield" id="contact-field" name="contactfield" type="text" placeholder="Contact Info" maxlength="300"></textarea>
+    <b class="required"> *</b> <br>
+    </div>
 
-        <div class="project-text-reg">
-        <textarea class ="genfield" id="time-field" name="timefield" type="text" placeholder="Location/Availability" maxlength="200"></textarea>
-        <b class="required"> *</b> <br>
-      	</div>
+    <div class="project-text-reg">
+    <textarea class ="genfield" id="time-field" name="timefield" type="text" placeholder="Location/Availability" maxlength="200"></textarea>
+    <b class="required"> *</b> <br>
+  	</div>
 
+  </div>
+
+  <label class="imageUp"> <input type="file"/> + Add Photos </label>
+    </div>
+    </div>
+
+    <div class="button-wrapper">
+      <button class="btn" id="cancelButton" onClick="window.location.href='./home_user.html'"> Cancel </button>
+      <button class="btn" id="submitButton" onClick="window.location.href='./profile_view.html'"> Submit </button>
+    </div>
       </div>
-
-      <label class="imageUp"> <input type="file"/> + Add Photos </label>
-        </div>
-        </div>
-
-        <div class="button-wrapper">
-          <button id="cancelButton" onClick="window.location.href='./home_user.html'"> Cancel </button>
-          <button id="submitButton" onClick="window.location.href='./profile_view.html'"> Submit </button>
-        </div>
-          </div>
-	</body>
-</head>
+</body>
 </html>

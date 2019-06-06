@@ -198,4 +198,6 @@ img {
   height: 50px;
   margin-bottom: 1rem;
   margin-left: 50px;
+  background-color: gray;
+  color: white;
 }
