@@ -5,6 +5,7 @@ body{
 .shit{
   width: 130px;
   background-color: #4B0082;
+  color: white;
 }
 .jasonbourne{
   display: inline-block;
@@ -230,9 +231,16 @@ body{
 	vertical-align: middle;
 	border-style: solid;
 	border-width: 2px;
+  color: #4B0082;
 }
+
 .material-icons.add-icon {
 	font-size: 80px;
+  color: #4B0082;
+}
+
+.material-icons.add-icon:hover {
+	color: purple;
 }
 
 .notifbar {

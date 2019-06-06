@@ -69,7 +69,7 @@
   vertical-align: top;
   font-size: 1.5em;
   font-weight: bold;
-  color: Purple;
+  color: #4B0082;
   background-color: F8F8F8;
   border: 1px solid grey;
   border-radius: 5px;
@@ -101,12 +101,16 @@ input[type="file"] {
 }
 
 .addPos {
-  background-color: Purple;
+  background-color: #4B0082;
   border: 1px solid indigo;
   color: white;
   border-radius: 5px;
   font-size: 1.2em;
   padding: 3px;
+}
+
+.add-pos-wrapper{
+  color: white;
 }
 
 #addPosition:active {
@@ -125,26 +129,17 @@ input[type="file"] {
 }
 
 #submitButton {
-  background-color: Purple;
-  border: 1px solid indigo;
+  background-color: #4B0082;
   color: white;
-  border-radius: 5px;
-  font-size: 1.2em;
-  padding: 3px;
   position: relative;
-  left: 77%;
+  left: 67%;
 }
 
 
 #cancelButton {
   background-color: Gainsboro;
-  border: 1px solid grey;
-  color: white;
-  border-radius: 5px;
-  font-size: 1.2em;
-  padding: 3px;
   position: relative;
-  left: 77%;
+  left: 67%;
 }
 
 .doneButton {
