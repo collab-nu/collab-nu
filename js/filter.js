@@ -6,50 +6,50 @@ var sections = [
       tag : "Music | Drama",
       title : "The Dolphin Show XVII",
       author : "dolphShow",
-      image : "../images/kitten.jpg"
+      image : "../images/dolphin.jpg"
     },
     {
       tag : "Music | Film",
       title : "My First Film",
       author : "SofSpiel",
-      image : "../images/kitten.jpg"
+      image : "../images/film.jpg"
     },
     {
       tag : "Music | Arts",
       title : "Pryan's BlarinetPalooza",
       author : "Pryan Bardo",
-      image : "../images/kitten.jpg"
+      image : "../images/hedge.jpg"
     },
     {
       tag : "Music | Arts",
       title : "Bardo's Clarinet Palooza",
       author : "Pryan Bardo",
-      image : "../images/kitten.jpg",
+      image : "../images/clarinet_pretty.jpg",
       href : "project_view.html"
     },
     {
       tag: "Music",
       title: "Jazz Band",
       author: "jazzyMan",
-      image: "../images/kitten.jpg"
+      image: "../images/jazz.jpg"
     },
     {
       tag: "Music",
       title: "Orchestra - Violin Needed!",
       author: "desperate grad",
-      image: "../images/kitten.jpg"
+      image: "../images/pretty_violin.jpg"
     },
     {
       tag: "Music | Writing",
       title: "Soundtrack for My Book",
       author: "payinexposure",
-      image: "../images/kitten.jpg"
+      image: "../images/book.jpg"
     },
     {
       tag: "Music",
       title: "Jam Session",
       author: "unemployed",
-      image: "../images/kitten.jpg"
+      image: "../images/jam.jpg"
     }
 
   ]
@@ -61,37 +61,37 @@ var sections = [
       tag: "Sports",
       title: "IM - Basketball",
       author: "basketcase",
-      image: "../images/kitten.jpg"
+      image: "../images/basket.jpg"
     },
     {
       tag: "Sports | Drama",
       title: "Baseball players needed for chorus!",
       author: "idontdance",
-      image: "../images/kitten.jpg"
+      image: "../images/base.jpg"
     },
     {
       tag: "Sports",
       title: "IM - Soccer",
       author: "brazilian",
-      image: "../images/kitten.jpg"
+      image: "../images/socc.jpg"
     },
     {
       tag: "Sports | Games",
       title: "Fantasy Football Anyone?",
       author: "Josh Smith",
-      image: "../images/kitten.jpg"
+      image: "../images/foot.jpg"
     },
     {
       tag: "Sports",
       title: "IM Team",
       author: "vague",
-      image: "../images/kitten.jpg"
+      image: "../images/im.jpg"
     },
     {
       tag: "Sports | Food",
       title: "Team Cook Needed!",
       author: "cookiemonster",
-      image: "../images/kitten.jpg"
+      image: "../images/cook.jpeg"
     }
   ]
   }
