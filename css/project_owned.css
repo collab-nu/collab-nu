@@ -20,6 +20,10 @@
   color: white;
 }
 
+#edit {
+  background-color: gray;
+  color: white;
+}
 .new-app-overlay {
   position: fixed;
   display: none;
