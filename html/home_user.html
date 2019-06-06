@@ -1,46 +1,50 @@
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="../css/home_default.css"/>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-		<script type="text/javascript" src="../js/navbar.js"></script>
-		<script type="text/javascript" src="../js/filter.js"></script>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/home_default.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="../js/navbar.js"></script>
+	<script type="text/javascript" src="../js/filter.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/css/mdb.min.css" rel="stylesheet">
+</head>
 		<body>
-			<nav class="navbar navbar-expand-lg navbar-light nav-shading" style="background-color: #4B0082;">
-				<div class="navbar w-100 order-1 order-md-0 dual-collapse2">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
-						</li>
-						<li class="nav-item active">
-							<form class="form-inline search-bar">
-			  				<input onclick="openFilter()" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				  			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			  			</form>
-							<div id="myFilter">
-			  				<h1 class="filter-heading"> Suggested Categories </h1>
-			  				<i onclick="closeFilter()" class="material-icons x-button"> close </i>
-			  				<input class="btn btn-primary" type="button" value="Music" onClick="filter('Music')">
-								<input class="btn btn-primary" type="submit" value="Arts">
-								<input class="btn btn-primary" type="reset" value="Jazz">
-								<input class="btn btn-primary" type="reset" value="Sports" onClick="filter('Sports')">
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="navbar w-100 order-3 dual-collapse2">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<i class="material-icons notif-button" onClick="openNotif()">notifications</i>
-						</li>
-						<li class="nav-item">
-	  					<p onclick="openForm()" id="sign-in" class="my-2 my-lg-0 sign-btn">Username</p>
-						</li>
-					</ul>
-				</div>
-	  	</nav>
+			<nav class="navbar navbar-expand-lg navbar-dark nav-shading" style="background-color: #4B0082;">
+	      <div class=" w-100 order-1 order-md-0 dual-collapse2">
+	        <ul class="navbar-nav mr-auto">
+	          <li class="nav-item active">
+	            <a onClick="window.location.href='./home_user.html'" class="navbar-brand project-name">Collab<b>NU</b></a>
+	          </li>
+	          <li class="nav-item active">
+	            <form class="form-inline search-bar">
+	              <input onclick="openFilter()" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	              <button class="btn aqua-gradient btn-rounded btn-sm my-0" type="submit">Search</button>
+	            </form>
+	            <div id="myFilter">
+	              <h1 class="filter-heading"> Suggested Categories </h1>
+	              <i onclick="closeFilter()" class="material-icons x-button"> close </i>
+	              <div class="jasonbourne">
+	                <input class="shit btn" type="button" value="Music" onClick="filter('Music')">
+	                <input class="btn shit" type="submit" value="Arts">
+	                <input class="btn shit" type="reset" value="Jazz">
+	                <input class="btn shit" type="reset" value="Sports" onClick="filter('Sports')">
+	              </div>
+	            </div>
+	          </li>
+	        </ul>
+	      </div>
+	      <div class="navbar-nav w-100 order-3 dual-collapse2">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item">
+	            <i class="material-icons notif-button" onClick="openNotif()">notifications</i>
+	          </li>
+	          <li class="nav-item">
+	            <p onclick="openForm()" id="sign-in" class="my-2 my-lg-0 sign-btn">Username</p>
+	          </li>
+	        </ul>
+	      </div>
+	  </nav>
 			<div id="MyNotifs" class="notifbar">
 				<div class="tiNot"> Notifications
 					<i onclick="closeNotif()" class="material-icons x-button smallOut"> close </i>
@@ -137,5 +141,4 @@
 				</div>
 			</div>
 		</body>
-	</head>
 </html>
