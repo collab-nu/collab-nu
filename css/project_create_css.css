@@ -145,7 +145,7 @@ input[type="file"] {
 .doneButton {
   position: relative;
   background-color: white;
-  left: 55%;
+  left: 50%;
 }
 
 .newPos {
@@ -182,5 +182,5 @@ input[type="file"] {
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: gray;
 }
