@@ -130,11 +130,10 @@ img {
 }
 
 .submitButton {
-  background-color: Purple;
-  border: 1px solid indigo;
+  background-color: #4B0082;
+
   color: white;
-  border-radius: 5px;
-  font-size: 1.2em;
+
   padding: 3px;
 	/*position: relative;*/
   float: right;
@@ -144,10 +143,9 @@ img {
 }
 .cancelButton {
   background-color: Gainsboro;
-  border: 1px solid indigo;
+
   color: white;
-  border-radius: 5px;
-  font-size: 1.2em;
+
   padding: 3px;
   /*position: relative;*/
   float: right;
@@ -190,4 +188,12 @@ img {
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
+}
+
+.btn-color{
+	background-color: green;
+}
+
+.btn-text{
+	color: white;
 }

@@ -144,7 +144,8 @@ input[type="file"] {
 
 .doneButton {
   position: relative;
-  left: 60%;
+  background-color: white;
+  left: 55%;
 }
 
 .newPos {

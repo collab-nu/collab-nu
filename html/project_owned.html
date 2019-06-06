@@ -91,8 +91,10 @@
 	 				My name is Jason Bourne, star of all the Jason Bourne Films. I would like to join
 	 				Bardo's Clarinet Palooza because I feel like all my life has led up to this.
 	 			</p>
-	 			<button onClick="acceptViolin()"class=accept-button id=accept-violin>Accept</button>
-	 			<button onClick="declineViolin()"class=decline-button id=decline-violin>Decline</button>
+				<div class="accept-decline-wrapper">
+	 				<button onClick="acceptViolin()"class="accept-button btn" id=accept-violin>Accept</button>
+	 				<button onClick="declineViolin()"class="decline-button btn" id=decline-violin>Decline</button>
+				</div>
 				<p id=app-accept-1 class=result-text>This applicant has been accepted!</p>
 				<p id=app-decline-1 class=result-text>This applicant has been declined.</p>
 		 </div>
@@ -107,13 +109,16 @@
 				My name is Jason Bourne, star of all the Bason Journe Films. I would like to join
 				Bardo's Clarinet Palooza because I feel like all my life has led up to this.
 			</p>
-			<button onClick="acceptHarp()"class=accept-button id=accept-harp>Accept</button>
-			<button onClick="declineHarp()"class=decline-button id=decline-harp>Decline</button>
+			<div class="accept-decline-wrapper">
+				<button onClick="acceptHarp()"class="accept-button btn" id=accept-harp>Accept</button>
+				<button onClick="declineHarp()"class="decline-button btn" id=decline-harp>Decline</button>
+			</div>
 			<p id=app-accept-2 class=result-text>This applicant has been accepted!</p>
 			<p id=app-decline-2 class=result-text>This applicant has been declined.</p>
 		</div>
-
-		 <input class="appSubmitButton" type="button" value="Done" onClick="hideNewAppOverlay()">
+		<div class="done-wrapper">
+		 <input class="appSubmitButton btn" type="button" value="Done" onClick="hideNewAppOverlay()">
+	 </div>
 	 </div>
 	</div>
 
@@ -140,8 +145,10 @@
 			</div>
 			<p class="project-text-mt">MWF 3-3:50PM</p>
 			<div class="project-text-head">
-				<p>Positions</p>
-				<button class="newAppButton" onClick="showNewApps()" id=new_apps>View New Applications!</button>
+				<p>Positions Wanted</p>
+				<div class=btn-wrapper>
+					<button class="newAppButton btn" onClick="showNewApps()" id=new_apps>View New Applications!</button>
+				</div>
 			</div>
 		</div>
 		<div class="project-image">

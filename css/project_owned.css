@@ -3,14 +3,21 @@
 }
 
 .newAppButton{
-  background-color: Purple;
-  border: 1px solid indigo;
-  border-radius: 5px;
-  color: white;
-  font-family: 'Roboto', sans-serif;
+  background-color: #4B0082;
   margin-left: -9px;
   margin-top: -15px;
   margin-bottom: 5px;
+  width: 300px;
+}
+
+.btn-wrapper{
+  color: white;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.accept-decline-wrapper{
+  color: white;
 }
 
 .new-app-overlay {
@@ -109,14 +116,15 @@
   float:left;
 }
 
+.done-wrapper{
+  color: white;
+}
+
 .appSubmitButton {
-  background-color: Purple;
-  border: 1px solid indigo;
+  background-color: #4B0082;
   width: 20%;
   height: 5%;
   color: white;
-  border-radius: 5px;
-  font-size: 1.2em;
 	position: relative;
   margin-top: 5px;
 	top: 2%;
